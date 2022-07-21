@@ -128,6 +128,9 @@ input[type = "checkbox"] {
     border: none;
     outline: none;
     border-bottom: 1px solid #286ef9;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
 }
 
 .todo-input__submit {
@@ -147,8 +150,17 @@ input[type = "checkbox"] {
     font-size: 14px;
     cursor: pointer;
     transition: all 0.2s ease;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
 }
 
 .btn:hover {
     opacity: 0.8;
+}
+
+@media only screen and (max-width: 720px) {
+    .main {
+        width: 100%;
+    }
 }
